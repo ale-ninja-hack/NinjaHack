@@ -1,3 +1,7 @@
 # NinjaHack
 
-Hola
+Ninja Hack un mini kit de herramientas en desarrolló
+
+# Instalación
+
+
