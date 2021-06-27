@@ -69,7 +69,7 @@ elif "2" in opciones:
 
 
 elif "3" in opciones:
-    os.system("cd TOOLS && cd INFORMACION && bash install.sh && python2 info.py")
+    os.system("cd TOOLS && cd INFORMACION && python2 info.py")
 
     
 elif "4" in opciones:
