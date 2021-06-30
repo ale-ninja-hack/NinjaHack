@@ -1,3 +1,6 @@
+# Creado por ale.tryhard
+# NinjaHack Toolkit
+
 import os
 import sys
 import time
@@ -19,6 +22,7 @@ def slowprint(s):
         sys.stdout.flush()
         time.sleep(10. / 100)
         
+os.system("clear")
 print(CYAN+"""
      ╔═══════════╗ 
    ╔═╝███████████╚═╗
@@ -56,6 +60,7 @@ print(GREEN+"[4] HERRAMIENTAS DE CARDING EN GITHUB")
 print()
 print(GREEN+"[5] SEGUNDO SCANER DE IP")
 print()
+print(GREEN+"[6] BANEAR WHATSAPP (SOLO COLOMBIA, MEXICO Y VENEZUELA")
 print()
 opciones = input(RED+"=> ")
 
@@ -89,6 +94,27 @@ y la contraseña es
 elif "5" in opciones:
     os.system("cd TOOLS && cd IP-TOOLS && bash ninja-scanner.sh")
 
+
+elif "6" in opciones:
+    os.system("git clone https://github.com/BR4Y4N46/WHATSAPP-BANEO && cd WHATSAPP-BANEO")
+    os.system("clear")
+    print(GREEN+"[1] BANEAR NUMEROS DE MEXICO")
+    print(GREEN+"[2] BANEAR NUMEROS DE COLOMBIA")
+    print(GREEN+"[3] BANEAR NUMEROS DE VENEZUELA")
+    print()
+    banearnum = input(WHITE+"=> ")
+
+    if "1" in banearnum:
+        os.system("bash BANEOMEXICO.sh")
+
+    elif "2" in banearnum:
+        os.system("bash BANEOCOLOMBIA.sh")
+
+    elif "3" in banearnum:
+        os.system("bash BANEOVENEZUELA.sh")
+
+    else:
+        print(RED+"Opcion invalida :(")
 
 else:
     print(RED+"Opcion Invalida :(")
