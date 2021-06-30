@@ -1,6 +1,7 @@
 import os
 import sys
 import time
+import webbrowser as ninja
 
 BLACK = '\033[30m'
 RED = '\033[31m'
@@ -18,8 +19,9 @@ def slowprint(s):
         sys.stdout.flush()
         time.sleep(10. / 100)
         
-print(CYAN+"""
-          ╔═══════════╗ 
+def banner():
+    print(CYAN+"""
+     ╔═══════════╗ 
    ╔═╝███████████╚═╗
 ╔╝███████████████╚╗ 
 ║█████████████████║ 
@@ -38,14 +40,15 @@ print(CYAN+"""
 ╔╝█╚══╦═╦══╦╩═╦═╦═╩╝
 ╔╝█████║█║██║██║█║
 ║██████║█████████║""")
-print()
-
-print(GREEN+"""
+    print()
+    print(GREEN+"""
 ===========================
 ||       NINJA HACK      ||
 ===========================""")
-print()
 
+banner
+print()
+print()
 print(GREEN+"[1] IP-NINJA")
 print()
 print(GREEN+"[2] DDOS Y DOS TOOLS")
@@ -53,6 +56,10 @@ print()
 print(GREEN+"[3] INFO GATHERING")
 print()
 print(GREEN+"[4] HERRAMIENTAS DE CARDING EN GITHUB")
+print()
+print(GREEN+"[5] SEGUNDO SCANER DE IP")
+print()
+print()
 opciones = input(RED+"=> ")
 
 if "1" in opciones:
@@ -82,7 +89,13 @@ y la contraseña es
     time.sleep(10)
     os.system("cd TOOLS/CARDING && bash carding.sh")
 
+elif "5" in opciones:
+    os.system("cd TOOLS && cd IP-TOOLS && bash ninja-scanner.sh")
+
+
 else:
     print(RED+"Opcion Invalida :(")
+    time.sleep(1)
+    ninja.open("tiktok.com/@ale.tryhard")
     time.sleep(1)
     os.system("python3 ninja.py")
