@@ -19,8 +19,7 @@ def slowprint(s):
         sys.stdout.flush()
         time.sleep(10. / 100)
         
-def banner():
-    print(CYAN+"""
+print(CYAN+"""
      ╔═══════════╗ 
    ╔═╝███████████╚═╗
 ╔╝███████████████╚╗ 
@@ -40,13 +39,11 @@ def banner():
 ╔╝█╚══╦═╦══╦╩═╦═╦═╩╝
 ╔╝█████║█║██║██║█║
 ║██████║█████████║""")
-    print()
-    print(GREEN+"""
+print()
+print(GREEN+"""
 ===========================
 ||       NINJA HACK      ||
 ===========================""")
-
-banner
 print()
 print()
 print(GREEN+"[1] IP-NINJA")
